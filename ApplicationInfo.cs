@@ -23,10 +23,7 @@ namespace ThatOtherAppPlus
     {
         public ApplicationInfo(string path)
         {
-            if (path is null)
-            {
-                ExceptionUtil.ThrowArgumentNullException(nameof(path));
-            }
+            ArgumentNullException.ThrowIfNull(path, nameof(path));
 
             this.DisplayName = GetDisplayName(path);
             this.Path = path;

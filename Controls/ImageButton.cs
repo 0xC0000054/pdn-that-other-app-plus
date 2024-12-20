@@ -14,6 +14,7 @@ using PaintDotNet;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace ThatOtherAppPlus.Controls
 {
@@ -52,11 +53,7 @@ namespace ThatOtherAppPlus.Controls
 
         public ImageButton(Bitmap image, object tag) : this()
         {
-            if (image is null)
-            {
-                ExceptionUtil.ThrowArgumentNullException(nameof(image));
-            }
-
+            ArgumentNullException.ThrowIfNull(image, nameof(image));
 
             this.Size = GetButtonSizeForImage(image);
             this.image = image;
@@ -72,10 +69,13 @@ namespace ThatOtherAppPlus.Controls
             Focused
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public DialogResult DialogResult { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool IsDefault { get; private set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Image Image
         {
             get
