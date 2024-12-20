@@ -3,7 +3,7 @@
 // This file is part of pdn-that-other-app-plus, a Effect plugin for
 // Paint.NET that exports the current layer to other image editors.
 //
-// Copyright (c) 2020 Nicholas Hayes
+// Copyright (c) 2020, 2024, 2024 Nicholas Hayes
 //
 // This file is licensed under the MIT License.
 // See LICENSE.txt for complete licensing and attribution information.
@@ -22,7 +22,7 @@ using System.Runtime.Versioning;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("null54")]
 [assembly: AssemblyProduct("ThatOtherAppPlus")]
-[assembly: AssemblyCopyright("Copyright © 2020 Nicholas Hayes (aka null54)")]
+[assembly: AssemblyCopyright("Copyright © 2024 Nicholas Hayes (aka null54)")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
